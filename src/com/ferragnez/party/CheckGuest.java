@@ -37,5 +37,21 @@ public class CheckGuest {
             System.out.println("Maledetto volevi imbucarti?? Ti conviene scappare!!");
         }
 
+        isGuest = false;
+        int index = 0;
+        while (index < guestsLength) {
+            if (guestName.equals(guests[index])){
+                isGuest = true;
+                break;
+            }else{
+                index ++;
+            }
+        }
+
+        if (isGuest){
+            System.out.println("Ok dai per questa volta ti lascio entrare... ma ti tendo d'occhio!!");
+        } else {
+            System.out.println("Maledetto volevi imbucarti?? Ti conviene scappare!!");
+        }
     }
 }
